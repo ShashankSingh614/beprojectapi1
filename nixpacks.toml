@@ -1,3 +1,10 @@
 [phases.setup]
 nixPkgs = ['tesseract', 'libmupdf']
 aptPkgs = ['tesseract-ocr', 'libmupdf-dev']
+
+[phases.install]
+cmds = [
+  'python -m venv --copies /opt/venv',
+  '. /opt/venv/bin/activate && pip install -r requirements.txt',
+  '. /opt/venv/bin/activate && pip install -r optional-requirements.txt'
+]
