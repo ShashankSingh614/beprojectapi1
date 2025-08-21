@@ -1,0 +1,47 @@
+# Python virtual environments
+venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build and deployment artifacts
+build/
+dist/
+*.egg-info/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Output directory from documentIntelligence.py
+~/Nyaya/logs/
+pdfTextExtractor.txt
+
+# Docker-related
+Dockerfile*
+docker-compose*
+!.dockerignore  # Keep .dockerignore if it exists
+
+# Ignore large or unnecessary files
+*.pdf
+*.docx
+*.xlsx
+
+# Dependency lock files (handled by requirements.txt)
+Pipfile
+Pipfile.lock
+poetry.lock
